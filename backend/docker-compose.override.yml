@@ -1,0 +1,16 @@
+services:
+  app:
+    image: talk-to-pdf-dev
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+    volumes:
+      # Mount the application code from the host to the container
+      - "./:/app"
+      # Ensure node_modules inside the container is not overridden
+      - "/app/node_modules"
+    env_file:
+      - .env.development
+    command: npm run dev

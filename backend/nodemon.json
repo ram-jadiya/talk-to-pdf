@@ -1,0 +1,13 @@
+{
+  "watch": ["src"],
+  "ext": "ts,js,json",
+  "ignore": ["node_modules", "dist"],
+  "exec": "ts-node src/server.ts",
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "delay": "200",
+  "restartable": "rs",
+  "verbose": true,
+  "legacy-watch": true
+}

@@ -1,0 +1,22 @@
+services:
+  frontend:
+    image: talk-to-pdf-frontend
+    build:
+      context: ./frontend 
+      dockerfile: Dockerfile
+    ports:
+      - "80:80" 
+    env_file:
+      - ./frontend/.env  
+
+  backend:
+    image: talk-to-pdf-backend
+    build:
+      context: ./backend 
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000" 
+    env_file:
+      - ./backend/.env 
+   
+
