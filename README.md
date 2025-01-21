@@ -70,7 +70,7 @@ TalkToPDF is an innovative web application that transforms the way users interac
 
    ```bash
    git clone https://github.com/ram-jadiya/talk-to-pdf.git
-   cd talktopdf
+   cd talk-to-pdf
    ```
 
 2. Install dependencies:
